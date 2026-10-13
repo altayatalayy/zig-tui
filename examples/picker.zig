@@ -77,7 +77,7 @@ fn pick(alloc: std.mem.Allocator) !?[]const u8 {
 fn refilter(query: []const u8, buf: *[items.len][]const u8) [][]const u8 {
     var n: usize = 0;
     for (items) |item| {
-        if (std.ascii.indexOfIgnoreCase(item, query) != null) {
+        if (std.ascii.findIgnoreCase(item, query) != null) {
             buf[n] = item;
             n += 1;
         }

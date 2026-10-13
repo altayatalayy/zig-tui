@@ -1,6 +1,6 @@
 # zig-tui
 
-Small Zig 0.16 terminal UI primitives. Linux-only.
+Small Zig 0.17 terminal UI primitives. Linux-only.
 
 - `tty` — raw mode, alternate screen, size queries, cursor control
 - `events` / `input` / `signals` — blocking key + resize event loop
